@@ -1,0 +1,502 @@
+/*Style application general*/
+:root{
+    --colorOne: #000000;
+    --colorTwo: #ffffff;
+    --colorTree: #00B6DA;
+    --colorFour: #42619f;
+    --colorFive: #24313C;
+    --colorSix: #0da195;
+    --colorSeven: #1bd3c4;
+    --colorEight: #ffd700;
+    --colorNine: #E0BC04;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    font-family: Work Sans;
+    color: var(--colorOne);
+    background-color: var(--colorTwo);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+    header{
+        width: 100%;
+        height: 12vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+        header img{
+            position: absolute;
+            height: auto;
+            z-index: 3;
+        }
+        header img:active{
+            transform: scale(0.85);
+            transition: transform 250ms ease;
+        }
+    main{
+        width: 100%;
+        height: 76vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+        section{
+            transition: opacity 250ms ease;
+        }
+        #Disable{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            display: none;
+            position: absolute;
+            z-index: 2;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 0, 0, 0.226);
+        }
+            .Box{
+                display: flex;
+                flex-flow: column wrap;
+                align-items: center;
+                opacity: 0;
+                background-color: rgba(0, 128, 0, 0.586);
+                transition: opacity 250ms ease-in;
+            }
+                .Box .displayAnimation{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 100%;
+                }
+                    .displayAnimation img{
+                        height: 90%;
+                        width: auto;
+                    }
+                .Box h5{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: var(--colorOne);
+                    color: var(--colorTwo);
+                    padding: 1vh;
+                }
+                .Box h5:active{
+                    scale: 0.95;
+                }
+        section:first-child{
+            display: flex;
+            flex-flow: column wrap; 
+        }
+            section:first-child aside:first-child{
+                width: 100%;
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+            }
+                section:first-child aside:first-child h3{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                section:first-child .level{
+                    cursor: pointer;
+                    transition: color 250ms ease-in-out;
+                }
+                section:first-child .currentLevel{
+                    color: var(--colorNine);
+                    text-shadow: 0px 0px 2px var(--colorEight);
+                }
+            section:first-child aside:nth-child(2){
+                width: 100%;
+                height: 50vh;
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+            }
+                section:first-child aside:nth-child(2) div{
+                    display: flex;
+                    flex-flow: column wrap;
+                    justify-content: center;
+                    align-items: center;
+                    border: 0.7vh var(--colorEight) solid;
+                    background-color: var(--colorOne);
+                }
+        #DisplayGame{
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+            position: relative;
+            display: none;
+        }
+            #DisplayGame div{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 1vh;
+            }
+            .control{
+                transition: transform 500ms ease;
+                background-position: center;
+                background-size: cover;
+                background-color: var(--colorOne);
+            }
+        .displayFacil, .displayMedio, .displayDificil{
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+        }
+    #Background{
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        transition: opacity 250ms ease;
+    }
+        .bgMainOne{
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 25%;
+            height: auto;
+        }
+        .bgMainTwo{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 25%;
+            height: auto;
+        }
+        .bgAnimalsOne{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 40%;
+            height: auto;
+        }
+        .bgAnimalsTwo{
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 25%;
+            height: auto;
+        }
+        .bgSportsOne{
+            position: absolute;
+            top: 12vh;
+            left: 0;
+            width: 45%;
+            height: auto;
+        }
+        .bgSportsTwo{
+            position: absolute;
+            bottom: 12vh;
+            right: 0;
+            width: 45%;
+            height: auto;
+        }
+        .bgToysOne{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 35%;
+            height: auto;
+        }
+        .bgToysTwo{
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 25%;
+            height: auto;
+        }
+        .ctrl{
+            transition: width 500ms ease;
+        }
+
+        
+/*Style application orientation landscape*/
+@media all and (orientation: landscape){
+        header h1{
+            font-size: 6vh;
+            font-family: Work Sans b;
+        }
+        header img{
+            top: 2vh;
+            left: 2vh;
+            width: 8vh;
+        }
+                .Box{
+                    width: 70%;
+                    height: 58vh;
+                }
+                    .Box .displayAnimation{
+                        height: 29vh;
+                    }
+                    .Box h5{
+                        margin-top: 5.8vh;
+                        height: 5.8vh;
+                        width: 30%;
+                        font-size: 3.5vh;
+                    }
+        section:first-child{
+            width: 60%;
+            height: 70vh;
+        }
+            section:first-child aside:first-child{
+                height: 20vh;
+                flex-flow: row wrap;
+            }
+                section:first-child aside:first-child h3{
+                    font-size: 3vw;
+                    width: 25%;
+                }
+            section:first-child aside:nth-child(2){
+                flex-flow: row wrap;
+            }
+                section:first-child aside:nth-child(2) div{
+                    height: 20vh;
+                    width: 30vh;
+                    border-radius: 2vh;
+                }
+                    section:first-child div img{
+                        height: 18vh;
+                        width: 18vh;
+                    }
+                #DisplayGame img{
+                    height: 90%;
+                    width: auto;
+                }
+        .displayFacil{
+            height: 69vh;
+            width: 129vh;
+            padding: 3vh 3vh 0;
+        }
+            .displayFacil div{
+                height: 19vh;
+                width: 29vh;
+                border: var(--colorEight) solid 0.5vh;
+            }
+        .displayMedio{
+            width: 131vh;
+            height: 45vh;
+            padding: 1vh 1vh 0;
+        }
+            .displayMedio div{
+                width: 20vh;
+                height: 13vh;
+                border: var(--colorEight) solid 0.5vh;
+            }
+        .displayDificil{
+            width: 149vh;
+            height: 68vh;
+            padding: 1vh 1vh 0;
+        }
+            .displayDificil div{
+                width: 23vh;
+                height: 15vh;
+                border: var(--colorEight) solid 0.5vh;
+            }
+}
+
+/*Para tablet*/
+@media all and (orientation: landscape) and (min-width: 1000px) and (max-width: 1369px){
+        header h1{
+            font-size: 5vh;
+        }
+                .Box{
+                    width: 72%;
+                    height: 68vh;
+                }
+                    .Box .displayAnimation{
+                        height: 34vh;    
+                    }
+                    .Box h5{
+                        margin-top: 6.8vh;
+                        height: 6.8vh;
+                        width: 50%;
+                    }
+        .displayMedio{
+            width: 113vh;
+            height: 39vh;
+            padding: 1vh 1vh 0;
+        }
+            .displayMedio div{
+                width: 17vh;
+                height: 11vh;
+            }
+        .displayDificil{
+            width: 113vh;
+            height: 52vh;
+            padding: 1vh 1vh 0;
+        }
+            .displayDificil div{
+                width: 17vh;
+                height: 11vh;
+            }
+}
+
+/*Style application orientation portrait*/
+@media all and (orientation: portrait){
+        header h1{
+            font-size: 3.3vh;
+            font-family: Work Sans b;
+        }
+        header img{
+            top: 4vh;
+            left: 2vh;
+            width: 4vh;
+        }
+                .Box{
+                    width: 85%;
+                    height: 76vh;
+                }
+                    .Box .displayAnimation{
+                        height: 38vh;
+                    }
+                    .Box h5{
+                        margin-top: 7.6vh;
+                        height: 7.6vh;
+                        width: 50%;
+                        font-size: 2.5vh;
+                    }
+        section:first-child{
+            width: 80%;
+            height: 75vh;
+        }
+            section:first-child aside:first-child{
+                height: 25vh;
+                flex-flow: column wrap;
+            }
+                section:first-child aside:first-child h3{
+                    font-size: 7vw;
+                    width: 60%;
+                    height: 5.5vh;
+                }
+            section:first-child aside:nth-child(2){
+                flex-flow: column wrap;
+            }
+                section:first-child aside:nth-child(2) div{
+                    height: 13vh;
+                    width: 24vh;
+                    border-radius: 1.5vh;
+                }
+                section:first-child div img{
+                    height: 11.7vh;
+                    width: 11.7vh;
+                }
+                #DisplayGame img{
+                    width: 90%;
+                    height: auto;
+                }
+        .displayFacil{
+            width: 68vw;
+            height: 136vw;
+            padding: 1vw 1vw 0;
+        }
+            .displayFacil div{
+                width: 21vw;
+                height: 32vw;
+                border: var(--colorEight) solid 0.5vw;
+            }
+        .displayMedio{
+            width: 49vw;
+            height: 135vw;
+            padding: 0.5vw 0.5vw 0;
+        }
+            .displayMedio div{
+                width: 15vw;
+                height: 21.5vw;
+                border: var(--colorEight) solid 0.5vw;
+            }
+        .displayDificil{
+            width: 57.5vw;
+            height: 129vw;
+            padding: 0.5vw 0.5vw 0;
+        }
+            .displayDificil div{
+                width: 13vw;
+                height: 20vw;
+                border: var(--colorEight) solid 0.5vw;
+            }
+
+        .bgMainOne{
+            width: 30%;
+        }
+        .bgMainTwo{
+            width: 30%;
+        }
+        .bgAnimalsOne{
+            width: 50%;
+        }
+        .bgAnimalsTwo{
+            width: 40%;
+        }
+        .bgToysOne{
+            width: 80%;
+        }
+        .bgToysTwo{
+            width: 50%;
+        }
+}
+
+/*Para tablet*/
+@media all and (orientation: portrait) and (min-width: 760px) and (max-width: 1000px){
+        header h1{
+            font-size: 5vh;
+        }
+        header img{
+            top: 3.5vh;
+            left: 3.5vh;
+            width: 5vh;
+        }
+                section:first-child aside:nth-child(2) div{
+                    width: 28vh;
+                }
+        .displayFacil{
+            width: 50vw;
+            height: 100vw;
+            padding: 1vw 1vw 0;
+        }
+            .displayFacil div{
+                width: 15vw;
+                height: 23vw;
+            }
+        .displayMedio{
+            width: 33.5vw;
+            height: 100.5vw;
+            padding: 1vw 1vw 0;
+        }
+            .displayMedio div{
+                width: 9.5vw;
+                height: 14.75vw;
+            }
+        .displayDificil{
+            width: 45.5vw;
+            height: 102vw;
+            padding: 0.5vw 0.5vw 0;
+        }
+            .displayDificil div{
+                width: 10vw;
+                height: 15.5vw;
+            }
+}
+
+/*Declaration of font external*/
+@font-face {
+    font-family: Work Sans;
+    src: url(./font/WorkSans-Light.ttf);
+}
+
+@font-face {
+    font-family: Work Sans b;
+    src: url(./font/WorkSans-Bold.ttf);
+}

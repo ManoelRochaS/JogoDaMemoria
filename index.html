@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="./css/photoGallery/logo.png" type="image/x-icon">
+    <title>Jogo da Memória</title>
+</head>
+<body>
+    <header>
+        <img src="./css/photoGallery/general/iconInformations.png" alt="" onclick="howToPlay()">
+        <h1>JOGO DA MEMÓRIA</h1>
+    </header>
+    <main>
+        <section>
+            <aside>
+                <h3 onclick="setLevel(0)" class="level currentLevel">Fácil</h3>
+                <h3 onclick="setLevel(1)" class="level">Médio</h3>
+                <h3 onclick="setLevel(2)" class="level">Difícil</h3>
+            </aside>
+            <aside>
+                <div onclick="startGame('Animais')"><img src="./css/photoGallery/general/iconAnimals.png" alt=""></div>
+                <div onclick="startGame('Esportes')"><img src="./css/photoGallery/general/iconSports.png" alt=""></div>
+                <div onclick="startGame('Brinquedos')"><img src="./css/photoGallery/general/iconToys.png" alt=""></div>
+            </aside>
+        </section>
+        <section id="DisplayGame" class="">
+        </section>
+        <section id="Disable">
+            <div class="Box">
+                <div class="displayAnimation"><img src="./css/photoGallery/general/trophy.png" alt=""></div>
+                <h5 onclick="restart()">Reiniciar</h5>
+                <h5 onclick="newGame()">Novo Jogo</h5>
+            </div>
+        </section>
+    </main>
+    <div id="Background">
+        <img class="bgMainOne ctrl" src="./css/photoGallery/general/bgMainOne.png" alt="">
+        <img class="bgMainTwo ctrl" src="./css/photoGallery/general/bgMainTwo.png" alt="">
+    </div>
+    <script src="./javascript/script.js"></script>
+</body>
+</html>
