@@ -4,25 +4,22 @@ Este é a construção de um projeto HTML, CSS e JS. No qual visa a implementaç
 
 ## Visão Geral
 
-O Jogo da Memória é um jogo de tabuleiro ou cartas que desafia os participantes a encontrar pares de cartas idênticas. As cartas são dispostas com a face voltada para baixo, e os jogadores, em turnos, viram duas cartas, tentando encontrar os pares correspondentes. O jogo testa a memória, concentração e habilidades cognitivas dos participantes. O objetivo é encontrar o maior número de pares para ganhar o jogo. É uma atividade divertida e educativa, adequada para todas as idades.
+O Jogo da Memória é um jogo de tabuleiro ou cartas que desafia os participantes a encontrar pares de cartas idênticas. As cartas são dispostas com a face voltada para baixo, e os jogadores, em turnos, viram duas cartas, tentando encontrar os pares correspondentes. O jogo testa a memória, concentração e habilidades cognitivas dos participantes. O objetivo é encontrar o maior número de pares para ganhar o jogo. É uma atividade divertida e educativa, adequada para todas as idades. Além disso, vamos ter que o foco do jogo se encontra na contemplação de 3 jogos educacionais referentes a brinquedos, esportes e animais. Com a distinção de 3 níveis. Em um formato de site iterativo.
 
-## Instalação
+## Acesso a aplicação
 
-[Forneça instruções claras sobre como instalar e configurar o seu projeto.]
+Link para acesso: https://manoelrochas.github.io/JogoDaMemoria/
 
-## Uso
+## Tecnologias utilizadas
 
-[Forneça exemplos de código ou instruções sobre como usar o seu projeto. Explique as funcionalidades principais e como os usuários podem interagir com elas.]
-
-## Contribuição
-
-[Explique como os outros podem contribuir para o seu projeto. Forneça orientações sobre como os colaboradores podem enviar pull requests, relatar problemas ou sugerir melhorias.]
-
-## Licença
-
-[Inclua informações sobre a licença do seu projeto.]
+- HTML
+- CSS
+- JS
+- Canvas
 
 ## Contato
 
-[Forneça informações de contato, como seu e-mail ou links para redes sociais, para que os usuários possam entrar em contato com você caso tenham dúvidas ou queiram fornecer feedback.]
+- manoelrdev@gmail.com
+- mrsn@ic.ufal.br
+- (82)99821-2884
 
